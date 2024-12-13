@@ -49,6 +49,8 @@ typedef unordered_map<char, ll> umpcll;
 typedef unordered_map<string, ll> umpsll;
 typedef unordered_map<int, vi> umpivi;
 
+//NOT WORKING
+
 ll f(int i, vi& visited, vpll& dominoes, int n, vll& output){
     visited[i] =1;
     if(i == n - 1){

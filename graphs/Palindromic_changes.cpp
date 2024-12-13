@@ -49,8 +49,12 @@ typedef unordered_map<char, ll> umpcll;
 typedef unordered_map<string, ll> umpsll;
 typedef unordered_map<int, vi> umpivi;
 
+//NOT WORKINGG>>>>>
+
 int main(){
   
+
+    
     ios_base::sync_with_stdio(0);cin.tie(NULL);
 
 
