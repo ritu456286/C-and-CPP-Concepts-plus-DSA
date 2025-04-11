@@ -13,11 +13,13 @@ class DisjointSet{
         }
     }
 
+    //O(1)
     int findParent(int u){
         if(parent[u] == u) return u;
         return parent[u] = findParent(parent[u]);
     }
 
+    // O(4alpha)
     void unionByRank(int u, int v){
         int ulp_u = parent[u];
         int ulp_v = parent[v];
@@ -38,6 +40,7 @@ class DisjointSet{
         return;
      }
 
+  // O(4alpha) -> more intuitive
     void unionBySize(int u, int v){
         int ulp_u = findParent(u);
         int ulp_v = findParent(v);
